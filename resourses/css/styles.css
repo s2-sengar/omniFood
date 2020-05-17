@@ -1,1 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    color: #555;
+    font-family: 'lato','Arial',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility; /* To Optimize text rendering */
+}
+/* ----------------------- */
+/* Re-usable Content */
+/* ----------------------- */
+.clearfix{zoom: 1;}
+.clearfix::after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.row{
+    max-width: 1140px; /* Setting max-width of content of row; */
+    margin: 0 auto 0 auto; /* Used to center to row content */
+}
+section{
+    padding: 80px 0px;
+}
+h1,h2{
+    margin: 0px;
+    font-weight: 300;
+    font-family:'lato',sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 240%;
+    margin-bottom: 30px;
+    word-spacing: 5px;
+}
+h3{
+    margin: 0px;
+    font-weight: 400;
+    font-family: 'lato',sans-serif;
+    font-size: 110%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.button{
+    text-decoration: none;
+    padding: 7px 30px;
+    padding-bottom: 10px;
+    color: #fff;
+    border: 1px solid #e67e22;
+    margin-right: 10px;
+    border-radius: 180px;
+    text-align: center;
+}
+img{
+    margin: 0;
+    padding: 0;
+}
+/* ----------------------- */
+/* Header Section */
+/* ----------------------- */
+.header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) ,url(img/hero.jpg);
+    background-size: cover; /* used to set background image to cover it is diffrent from object-fit */
+    background-position: center; /* used to center the cover background */
+}
+.head-textBox{
+    position: absolute;
+    width: 1140px;
+    padding: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.button-live{
+    background-color: #e67e22;
+}
+.button-ghost{
+    color: #e67e22;
+}
+.button-live:hover{
+    background-color: #d46e15;
+    border: 1px solid #d46e15;
+    transition: background-color 0.2s;
+}
+.button-ghost:hover{
+    background-color: #d46e15;
+    border: 1px solid #d46e15;
+    color: #fff;
+    transition: background-color 0.2s, color 0.2s;
+}
+/* Nav-Bar */
+.nav-logo{
+    height: 90px;
+    width: auto;
+    margin-top: 20px;
+    display: block;
+    float: left;
+}
+.main-nav ul{
+    list-style: none;
+    float: right;
+    margin-top: 50px;
+}
+.main-nav ul a{
+    text-decoration: none;
+    color: #fff;
+}
+.main-nav ul li{
+    display: inline;
+    padding: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 90%;
+    margin-right: 20px;
+}
+.main-nav ul li:hover{
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s ease ;
+}
+/* ---------------------- */
+/* Features- Section */
+/* ---------------------- */
+h2{
+    color: #555;
+    font-size: 180%;
+    font-weight: 399;
+    text-align: center;
+}
+h2::after{
+    display: block;
+    height: 2px;
+    width: 150px;
+    background-color: #e67e22;
+    content: " ";/* In case use use a after psudo selector we need to specify content */
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.long-copy{
+    width: 70%;
+    margin: 0 15%;
+    text-align: center;
+    font-weight: 390;
+    word-spacing: 3px;
+    margin-bottom: 20px;
+}
+.features-icon{
+    margin-top: 10px;
+    font-size: 200%;
+    font-weight: 300;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+.content{
+    font-size: 90%;
+    line-height: 145%;
+}
+.features-card{
+    padding:0px 10px;
+}
+/* ------------------- */
+/* fav-meals Section */
+/* ------------------- */
+.meals{
+    padding: 0;
+}
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+.meal-photo img{
+    opacity: 0.6;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.3s ease-in;
+}
+.meal-photo img:hover{
+    opacity: 1.0;
+    transform: scale(1.03);
+}
+.iphone-app img{
+    width: 40%;
+    height: auto;
+}.iphone-app{
+    text-align: right;
+    padding-right: 30px;
+}
+.no{
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid #e67e22;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 120%;
+    font-weight: 400;
+    color: #e67e22;
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+.steps{
+    margin-bottom: 50px;
+}
+.steps p{
+    font-weight: 390;
+}
+.wrap-steps{
+    margin-top: 60px;
+}
+.app-download-icon{
+    height: 40px;
+    width: auto;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.working{
+    background-color: rgb(228, 228, 228);
+}
+/* -------------------------------- */
+/* current-cities */
+/* -------------------------------- */
+.city-card{
+    overflow: hidden;
+    /* background-color: rgb(245, 245, 245); */
+    box-shadow: rgba(228, 228, 228, 0.5) 0px 0px 80px;
+}
+.city-card:hover{
+    box-shadow: rgba(228, 228, 228, 0.5) 5px 5px 5px;
+}
+.city-img{
+    width: 100%;
+}
+.city-icon{
+    font-size: 120%;
+    display: block;
+    float: left;
+    margin-right: 15px;
+    color: #df6800;
+}
+.card-content{
+    padding: 20px;
+}
+.card-content h3{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -1px;
+}
+.content-line{
+    width: 100%;
+    margin-bottom: 10px;
+    vertical-align: center;
+}
+.card-content p{
+    display: block;
+    float: left;
+    font-size: 87%;
+    font-weight: 399;
+}
+/* --------------------- */
+/* testimonials */
+/* --------------------- */
+.testimonials{
+    background-image:linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.80)) ,url(/resourses/img/back-customers.jpg);
+    background-size: cover; /* used to set background image to cover it is diffrent from object-fit */
+    background-position: center;
+}
+.testimonials h2{
+    color: #fff;
+}
+.testimonial-content{
+    color: aliceblue;
+    font-style: italic;
+    padding:0px 15px;
+    word-spacing: 2.5px;
+}
+.testimonial-content p{
+    font-size: 90%;
+    margin-bottom: 10px;
+
+}
+.ldquo{
+    font-size: 600%;
+    line-height: 0px;
+    padding: 0;
+    margin: 0;
+    white-space: 0px;
+    margin-top: 30px;
+    margin-left: -20px;
+}
+.testimonial-customer img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.customer-name{
+    margin-top: 40px;
+    margin-left: 10px;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
 
