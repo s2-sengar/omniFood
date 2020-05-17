@@ -237,11 +237,91 @@ h2::after{
 .working{
     background-color: rgb(228, 228, 228);
 }
+/* -------------------------------- */
+/* current-cities */
+/* -------------------------------- */
+.city-card{
+    overflow: hidden;
+    /* background-color: rgb(245, 245, 245); */
+    box-shadow: rgba(228, 228, 228, 0.5) 0px 0px 80px;
+}
+.city-card:hover{
+    box-shadow: rgba(228, 228, 228, 0.5) 5px 5px 5px;
+}
+.city-img{
+    width: 100%;
+}
+.city-icon{
+    font-size: 120%;
+    display: block;
+    float: left;
+    margin-right: 15px;
+    color: #df6800;
+}
+.card-content{
+    padding: 20px;
+}
+.card-content h3{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -1px;
+}
+.content-line{
+    width: 100%;
+    margin-bottom: 10px;
+    vertical-align: center;
+}
+.card-content p{
+    display: block;
+    float: left;
+    font-size: 87%;
+    font-weight: 399;
+}
+/* --------------------- */
+/* testimonials */
+/* --------------------- */
+.testimonials{
+    background-image:linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.80)) ,url(/resourses/img/back-customers.jpg);
+    background-size: cover; /* used to set background image to cover it is diffrent from object-fit */
+    background-position: center;
+}
+.testimonials h2{
+    color: #fff;
+}
+.testimonial-content{
+    color: aliceblue;
+    font-style: italic;
+    padding:0px 15px;
+    word-spacing: 2.5px;
+}
+.testimonial-content p{
+    font-size: 90%;
+    margin-bottom: 10px;
 
-
-
-
-
+}
+.ldquo{
+    font-size: 600%;
+    line-height: 0px;
+    padding: 0;
+    margin: 0;
+    white-space: 0px;
+    margin-top: 30px;
+    margin-left: -20px;
+}
+.testimonial-customer img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.customer-name{
+    margin-top: 40px;
+    margin-left: 10px;
+    font-style: normal;
+}
 
 
 
